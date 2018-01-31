@@ -1,0 +1,107 @@
+html{
+    height:auto;
+    border-style: none ridge;
+    border-color: rgb(42, 56, 83);
+    border-width: 25px;
+    background-color: rgba(207, 223, 235, 0.418); 
+    background: url(Resources/Backgpic.png);  background-size: cover;background-repeat: no-repeat;  
+}
+h1{
+    color: rgba(96, 144, 177,1);
+    text-align:center;
+    font-family: sans-serif;
+}
+.page img{
+    margin: 20px;
+    border-radius: 15px;
+}
+.text{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    width: 100%;
+    background-color: rgba(4, 5, 51, 1);
+    padding: 5px 0px;
+    margin:20px 0px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+footer{
+    font-style: italic;
+    font-size: 18px;
+    display:block;
+    width:100%;
+    border:2px solid transparent;
+    margin: 20px 0px;
+    padding: 20px 0px;
+    height: 60px;
+    text-align: center;
+    background-color: rgba(4, 5, 51, 1) ;
+    border-radius: 10px;
+}
+.links{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 18px;
+    position: absolute;
+    top: 850px;
+    width:1280px;
+    fill-opacity:1; 
+    border:2px solid transparent;
+    margin: 20px 0px;
+    padding: 20px 0px;
+    min-height: 60px;
+    text-align: center;
+    background-color: rgba(4, 5, 51, 1) ;
+    border-radius: 10px;
+}
+form{
+    position: relative;
+    top:40px; 
+}
+#all{
+    text-align: center;
+    position: relative;
+    top:170px;
+}
+#all h1{
+    font-size: 65px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    color: rgb(152, 148, 211);
+}
+.link:hover{
+    color: white;
+}
+.button div{
+    font-size: 140%;
+    padding: 10px 0px;
+    background-color: rgb(44, 56, 126);
+    width: 12.5%;
+    border-radius: 5px;  
+}
+#left{
+    position: absolute;
+    left: 33%;
+}
+#right{
+    position: absolute;
+    left: 47.6%;
+}
+.button div:active{
+    background-color: gainsboro;
+}
+.button a,.button a:visited{
+    text-decoration: none;
+    color: rgb(189, 222, 226);
+}
+input[type = submit]{
+    font-size: 18px;
+}
+
