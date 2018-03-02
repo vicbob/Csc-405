@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Dynamic survey</title>
+        <link rel="stylesheet" href="Form_design.css">
+        <script src="Form.js"></script>
+</head>
+<body>
+    <header>
+            <p id="rightheader">
+                    <button onclick="window.close()"> EXIT THIS SURVEY</button>
+                </p>
+        <p id = "leftheader">
+        Review of State Government performance survey
+        </p>
+    
+    </header>
+    <br><br><br>
+    <Form id="body" >
+    <p id="state">
+        Please enter your state of residence: <br>
+        <input type= "text" onchange="stateValidation()" id="state_field" list="states">
+        <datalist id="states">
+            <option value="Lagos"></option>
+            <option value="Ogun"></option>
+            <option value="Oyo"></option>
+            <option value="Osun"></option>
+            <option value="Ekiti"></option>
+        </datalist>
+    </p>
+    <p id = "sex" style ="display:none">
+        Gender: <br>
+        <input type="radio" name = "gender" value="male" checked>Male <br>
+        <input type="radio" name = "gender" value="female" >Female 
+    </p>
+    <p id="age" style="display:none" >
+            Please enter your age <br>
+            <input type="number" id="age_field" onchange="ageValidation()">
+        </p>
+        <p id="school" style="display:none">
+                Do you attend a public or a private school? <br>
+                <input type= "radio" onchange="schoolValidation(value)" name="school" value="public" >Public <br>
+                <input type= "radio" onchange="schoolValidation(value)" name="school" value="private">Private <br>
+            </p>
+            <p id="rate_Edu" style="display:none">
+                    How would you rate the educational standard in your school(Scale of 1 to 5) <br>
+                    <input type= "number" onchange="rateEduValidation()" id="rate_Edufield">
+                </p>
+                <p id="public_vic" style="display:none">
+                        Are there any public schools in your vicinity <br>
+                        <input type= "radio" onchange="publicVicValidation(value)" name="decision" value="yes">Yes <br>
+                        <input type= "radio" onchange="publicVicValidation(value)" name="decision" value="no">No
+                    </p>
+                    <p id="scholarship" style="display:none">
+                            Are you benefitting from any government scholarship <br>
+                            <input type= "radio" onchange="End()" name="decision" value="yes"> Yes <br>
+                            <input type= "radio" onchange="End()" name="decision" value="no">No
+                        </p>
+                        <p id="feel_public" style="display:none">
+                                What do you feel about such school <br>
+                                <textarea onchange="End()" rows=3 cols="30"></textarea>
+                            </p>
+            <p id="occupation" style="display:none">
+                    Occupation <br>
+                    <input type= "text" onchange="occupationValidation()" id="occupation_field">
+                </p>
+                <p id="university" style="display:none">
+                      Which type of university do you attend? <br>
+                        <input type= "radio" onchange="universityValidation(value)" value="fg" name="uni_type">Federal <br>
+                        <input type= "radio" onchange="universityValidation(value)" value="sg" name="uni_type">State <br>
+                        <input type= "radio" onchange="universityValidation(value)" value="private" name="uni_type">Private <br>
+                    </p>
+                        <p id="rateUni" style="display:none">
+                                How would you rate the educational standard in your school(Scale of 1 to 5) <br>
+                                <input type= "number" onchange="rateUniValidation()" id="rateUni_field">
+                            </p>
+                            <p id="bursary" style="display:none">
+                                    Have you heard of any bursary in your state <br>
+                                    <input type= "radio" onchange="bursaryValidation(value)" name="bursary" value="yes"> Yes <br>
+                                    <input type= "radio" onchange="bursaryValidation(value)" name="bursary" value="no">No
+                                </p>
+                                    <p id="empowerment" style="display:none">
+                                            Have you heard of any self-empowerment scheme in your state?<br>
+                                            <input type= "radio" onchange="empowermentValidation(value)" name="empower" value="yes">Yes <br>
+                                            <input type= "radio" onchange="empowermentValidation(value)" name="empower" value="no">No
+                                        </p>
+                                        <p id="tax" style="display:none">
+                                                What can you say about the current tax system? <br>
+                                                <textarea onchange="taxValidation()" id="tax_field"></textarea>
+                                            </p>
+                                            <p id="retired" style="display:none">
+                                                    Are there any government retirement plans for people in your state? <br>
+                                                    <input type= "radio" onchange="retirementValidation(value)" name="retirement" value="yes">Yes <br>
+                                                    <input type= "radio" onchange="retirementValidation(value)" name="retirement" value="no">No
+                                                </p>
+                                                <p id="road" style="display:none">
+                                                        How would you rate the roads in your community(Scale of 1 to 5) <br>
+                                                        <input type= "number" onchange="roadValidation()" id="road_field">
+                                                    </p>
+                                                    <p id="rateGov" style="display:none">
+                                                            How would you rate your government(Scale of 1 to 5) <br>
+                                                            <input type= "number" onchange="rateGovValidation()" id="rateGov_field">
+                                                        </p>
+        <p id="info" style="display:none">
+            </p>
+    </Form>
+</body>
+</html>

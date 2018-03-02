@@ -1,0 +1,64 @@
+#body{
+    height:480px;
+    width: 335px;
+    padding: 10px 1px 10px 6px;
+    border-style:solid;
+    border-width: 3px;
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0.932);
+}
+td{
+    height: 35px;
+    width: 50px;
+}
+tr{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+#screen{
+    height: 60px;
+    width:300px;
+    padding: 15px 6px;
+}
+textarea{
+    font-size: 18px;
+    border-radius: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: lightskyblue;
+    resize: none;
+    overflow: hidden;
+}
+#text{
+    width: 289px;
+    height: 45px;
+    margin-bottom: -40px;
+    padding-bottom: -10px;
+    border-bottom: none;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+#tx2{
+    width: 289px;
+    height: 24px;
+    border-top: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    text-align: right;
+}
+button{    /* background-color: rgba(0, 0, 0, 0.911);
+    color: white; */
+    font-weight: 600;
+    height: 35px;
+    width:50px;
+    border-radius: 5px;
+}
+#point{
+    font-weight: 900;
+}
+#del,#clear{
+    background-color: orangered;
+}
+#shift{
+    background-color: rgb(47, 122, 192);
+}

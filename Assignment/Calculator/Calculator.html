@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calcStyle.css">
+    <script src="calcScript.js"></script>
+</head>
+<body>
+    <table id="body">
+        <tr>
+            <td  colspan="5">
+                    <textarea id="text" cols="20" rows="2"  maxlength="56"></textarea>
+            </td>
+        </tr>
+        <tr id = "close">
+            <td id="ans_screen" colspan="5">
+                <textarea id="tx2" cols="20" rows="1"  maxlength="28"></textarea>
+        </td>
+        </tr>
+    <tr>
+        <td>
+            <button id = "shift" onclick="shift()">SHIFT</button>
+        </td>
+        <td>
+                <button id = "sin" onclick="typer(id)">sin</button>
+            </td>
+            <td>
+                    <button id = "cos" onclick="typer(id)">cos</button>
+                </td>
+                <td>
+                        <button id = "tan" onclick="typer(id)">tan</button>
+                    </td>
+                    <td>
+                            <button id = "clear" onclick="clearAll()">C</button>
+                        </td>
+    </tr>
+    <tr>
+            <td>
+                    <button id = "abs" onclick="typer(id)">abs</button>
+                </td>
+                <td>
+                        <button id = "ln" onclick="typer(id)">ln</button>
+                    </td>
+                    <td>
+                            <button id = "power" onclick="typer(id)">^</button>
+                        </td>
+                        <td>
+                                <button id = "sqrt" onclick="typer(id)">sqrt</button>
+                            </td>
+                            <td>
+                                    <button id = "del" onclick="del()">del</button>
+                                </td>
+    </tr>
+    <tr>
+            <td>
+                    <button id = "seven" onclick="typer(id)">7</button>
+                </td>
+                <td>
+                        <button id = "eight" onclick="typer(id)">8</button>
+                    </td>
+                    <td>
+                            <button id = "nine" onclick="typer(id)">9</button>
+                        </td>
+                        <td>
+                                <button id = "opening_bracket"  onclick="typer(id)">(</button>
+                            </td>
+                            <td>
+                                    <button id = "closing_bracket" onclick="typer(id)">)</button>
+                                </td>
+    </tr>
+    <tr>
+            <td>
+                    <button id = "four" onclick="typer(id)">4</button>
+                </td>
+                <td>
+                        <button id = "five" onclick="typer(id)">5</button>
+                    </td>
+                    <td>
+                            <button id = "six" onclick="typer(id)">6</button>
+                        </td>
+                        <td>
+                                <button id = "multiply" onclick="typer(id)">*</button>
+                            </td>
+                            <td>
+                                    <button id = "divide" onclick="typer(id)">/</button>
+                                </td>
+    </tr>
+    <tr>
+            <td>
+                    <button id = "one" onclick="typer(id)">1</button>
+                </td>
+                <td>
+                        <button id = "two" onclick="typer(id)">2</button>
+                    </td>
+                    <td>
+                            <button id = "three" onclick="typer(id)">3</button>
+                        </td>
+                        <td>
+                                <button id = "plus" onclick="typer(id)">+</button>
+                            </td>
+                            <td>
+                                    <button id = "minus" onclick="typer(id)">-</button>
+                                </td>
+    </tr>
+    <tr>
+            <td>
+                    <button id = "zero" onclick="typer(id)">0</button>
+                </td>
+                <td>
+                        <button id = "point" onclick="typer(id)">.</button>
+                    </td>
+                    <td>
+                            <button id = "exp" onclick="typer(id)">Exp</button>
+                        </td>
+                        <td>
+                                <button id = "ans" onclick="typer(id)">Ans</button>
+                            </td>
+                            <td>
+                                    <button id = "equal" onclick="calculate()">=</button>
+                                </td>
+    </tr>
+    </table>
+</body>
+</html>
